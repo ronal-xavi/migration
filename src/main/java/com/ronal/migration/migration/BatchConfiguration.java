@@ -1,7 +1,7 @@
 package com.ronal.migration.migration;
 
 import com.ronal.migration.migration.model.Persona;
-import com.ronal.migration.migration.model.listener.JobListener;
+import com.ronal.migration.migration.listener.JobListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
