@@ -9,6 +9,13 @@ public class Persona {
     public Persona() {
     }
 
+    public Persona(String nombre, String apellido, String direccion, String telefono) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+
     public String getNombre() {
         return nombre;
     }

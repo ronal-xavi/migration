@@ -14,8 +14,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-@SpringBootApplication
-public class MigrationAntiguita implements CommandLineRunner {
+//@SpringBootApplication
+public class MigrationAntiguita /*implements CommandLineRunner*/ {
 
   private static final Logger LOG = LoggerFactory.getLogger(JobListener.class);
 
@@ -26,7 +26,7 @@ public class MigrationAntiguita implements CommandLineRunner {
     SpringApplication.run(MigrationAntiguita.class, args);
   }
 
-  @Override
+//  @Override
   public void run(String... args) throws Exception {
     LOG.info("INICIANDO EJECUCIÓN ...");
     long start = System.currentTimeMillis();

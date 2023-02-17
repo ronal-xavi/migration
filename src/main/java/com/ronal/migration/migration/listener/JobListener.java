@@ -32,7 +32,7 @@ public class JobListener extends JobExecutionListenerSupport {
             Date end = jobExecution.getEndTime();
 
             long diff = end.getTime() - start.getTime();
-            long total = jdbcTemplate.queryForObject("SELECT count(1) FROM persona", Long.class);
+            long total = jdbcTemplate.queryForObject("SELECT count(1) FROM tb_persona", Long.class);
             LOG.info("TIEMPO DE EJECUCIÓN: {}", TimeUnit.SECONDS.convert(diff,TimeUnit.MILLISECONDS));
             LOG.info("Registros: {}",total);
         }
